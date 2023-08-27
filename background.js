@@ -41,11 +41,14 @@ function isYouTubeVideoUrl(url) {
 chrome.contextMenus.onClicked.addListener((info, tab) => {
     let videoID;
 
-    // If the page is a youtube video page, then extract the id from the tab URL itself
-    if (isYouTubeVideoUrl(info.pageUrl)) videoID = extractYouTubeVideoId(pageURL)
-
     // If the link is a youtube video link, then extract the id from the Link itself
-    else if (isYouTubeVideoUrl(info.linkUrl)) videoID = extractYouTubeVideoId()
+    if (isYouTubeVideoUrl(info.linkUrl)) videoID = extractYouTubeVideoId(info.linkUrl)
+    
+    // If the page is a youtube video page, then extract the id from the tab URL itself
+    else if (isYouTubeVideoUrl(info.pageUrl)) videoID = extractYouTubeVideoId(info.pageUrl)
+
+    // Note, we are checking the Link URL first, because in case the user clicks on a YouTube video link when they are already watching a YouTube video, the ID copied will not be of the clicked Link but of the current video being played, because we are checking for the page first. Therefore, instead of checking of the page first, we will check for the clicked LINK to see if it's a YouTube video link, if it's not, then it will check for the page URL. 
+    
 
 
     else console.log("This is neither a youtube video page nor a youtube video link you have clicked on");
