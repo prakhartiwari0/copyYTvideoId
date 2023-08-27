@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Copy YouTube Video ID",
+  "description": "Right click and copy youtube video ID (not URL)",
+  "version": "1.0",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+"background": {
+    "service_worker": "background.js",
+    "type": "module"
+},
+"permissions": [
+    "contextMenus", "tabs", "activeTab"
+],
+  "content_scripts": [
+    {
+        "js": [
+            "script.js"
+        ],
+        "matches": ["*://*.youtube.com/*"]
+    }
+]
+}
