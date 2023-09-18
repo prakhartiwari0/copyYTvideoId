@@ -5,8 +5,7 @@ If you right-click on a YouTube video link or right-click on a YouTube video, it
 # Demo & Screenshots
 | Screenshot   |  Video | 
 |----------|-------------|
-| ![Screenshot from 2023-09-18 08-33-04](https://github.com/prakhartiwari0/copyYTvideoId/assets/65062036/67c9f852-a842-4c14-bcf7-322b6cf75ccc) | <a href="https://youtu.be/qs8P9WWFYbw"><img src="https://github.com/prakhartiwari0/copyYTvideoId/assets/65062036/be951692-f49f-4e1a-bdde-d0f4b15aa044"></a> | 
-
+| ![Screenshot from 2023-09-18 08-33-04](https://github.com/prakhartiwari0/copyYTvideoId/assets/65062036/67c9f852-a842-4c14-bcf7-322b6cf75ccc) |  <img src="https://github.com/prakhartiwari0/copyYTvideoId/assets/65062036/be951692-f49f-4e1a-bdde-d0f4b15aa044"/> <a href="https://youtu.be/qs8P9WWFYbw" align="center"> YouTube Video Link </a> | 
 
 
 
